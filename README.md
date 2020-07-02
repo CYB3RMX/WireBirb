@@ -7,4 +7,4 @@ A scapy based module for programming offensive and defensive networking tools ea
 ![Screen](Screenshot.png)
 
 ## Help
-<b>You can use ```help(wirebirb)``` function to see usage of all methods</b>
+<b>You can use ```help(wirebirb)``` function to see usages of all methods</b>
