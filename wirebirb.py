@@ -223,7 +223,4 @@ class WireBirbNetwork:
         self.targetip = targetip
 
         packSpoof = IP(src=self.fakeip, dst=self.targetip)/ICMP()
-        answer = send(packSpoof)
-
-        if answer:
-            answer.show()
+        send(packSpoof)
