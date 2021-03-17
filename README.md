@@ -4,7 +4,7 @@ A scapy based module for programming offensive and defensive networking tools ea
 <b> Warning:</b><i> Usage of WireBirb for attacking targets without prior mutual consent is illegal. It's the end user's responsibility to obey all applicable local, state and federal laws. Developers assume no liability and are not responsible for any misuse or damage caused by this module </i>
 
 # Updates
-- [x] <b>10/07/2020</b>: macFlood method fixed.
+- [x] <b>17/03/2021</b>: Bug fixes.
 
 # Screenshot
 ![Screen](Screenshot.png)

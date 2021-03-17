@@ -11,6 +11,7 @@ from random import randrange
 try:
     from scapy.all import Dot11, Dot11Beacon, Dot11Elt, RadioTap, sendp, send, Ether, ARP, srp, IP, sr1, TCP, UDP
     from scapy.all import RandMAC, RandIP, ICMP, promiscping
+    from scapy.all import conf
 except:
     print("Module: >scapy< not found.")
 
